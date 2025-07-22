@@ -1,82 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    max-width: 1200px; 
-    margin: 0 auto;
-    padding: 60px;
-    background-color: #f9f9f9;
-    color: #333;
+  font-family: 'Inter', sans-serif;
+  font-size: 10pt;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.4;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 8.5in;
+  height: 11in;
+  margin: 0 auto;
+  padding: 0.5in;
+  background: white;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+header h1 {
+  font-size: 16pt;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+header p {
+  font-size: 9pt;
+  color: #555;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+section {
+  margin-bottom: 0.4rem;
+}
+
+h2 {
+  font-size: 11pt;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 0.2rem;
+  border-bottom: 1px solid #ccc;
+}
+
+h3 {
+  font-size: 10.5pt;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.1rem;
+}
+
+ul {
+  padding-left: 1rem;
+  margin-top: 0.2rem;
+}
+
+ul li {
+  margin-bottom: 0.1rem;
+}
+
+.job span {
+  display: block;
+  font-size: 9pt;
+  font-style: italic;
+  color: #666;
+  margin-bottom: 0.2rem;
+}
+
+@media print {
+  body {
+    background: none;
   }
-  
-  h1 {
-    font-size: 48px;
-    font-weight: bold;
-    color: #333;
-    text-align: center;
-    margin-bottom: 20px;
+
+  .container {
+    box-shadow: none;
+    width: auto;
+    height: auto;
+    padding: 0.3in;
   }
-  
-  h2 {
-    font-size: 32px;
-    font-weight: bold;
-    color: #333;
-    margin-top: 60px;
-    margin-bottom: 20px;
+
+  a {
+    color: #000;
+    text-decoration: none;
   }
-  
-  h4 {
-    font-size: 24px;
-    font-weight: bold;
-    color: #555;
-    margin-top: 40px;
-    margin-bottom: 10px;
-  }
-  
-  p {
-    font-size: 20px;
-    line-height: 1.6;
-    margin-bottom: 30px;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding-left: 20px;
-  }
-  
-  ul ul {
-    padding-left: 40px;
-  }
-  
-  li {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 15px;
-  }
-  
-  hr {
-    border: none;
-    border-top: 1px solid #ccc;
-    margin: 40px 0;
-  }
-  
-  /* Responsive design */
-  @media screen and (max-width: 600px) {
-    body {
-      padding: 20px;
-    }
-  
-    h1 {
-      font-size: 36px;
-    }
-  
-    h2 {
-      font-size: 28px;
-    }
-  
-    h4 {
-      font-size: 20px;
-    }
-  
-    p, li {
-      font-size: 16px;
-    }
-  }
+}
